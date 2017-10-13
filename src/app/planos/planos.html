@@ -1,0 +1,64 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    
+  <header class="mdl-layout__header">
+    <a href="ui-sref="/""> <img src="../assets/images/wooza.png"  alt="wooza"></a> 
+  </header>
+    
+       <pre>
+        {{ main.listPlanos }}<!--//| json-->
+      </pre>
+    
+      <main class="mdl-layout__content">
+        <div class="page-content">
+      
+    <h1>Escolha seu Plano</h1>
+            
+          <div class="mdl-grid">
+            
+            <table class="mdl-data-table mdl-js-data-table  mdl-shadow--2dp">
+               <thead>
+                <tr>
+                  <th class="mdl-data-table__cell--non-numeric">Franquia</th>
+                  <th>valor</th>                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="planos in main.listPlanos.planos">
+                  <td class="mdl-data-table__cell--non-numeric">{{ planos.franquia }} </td>
+                  <td class="mdl-data-table__cell--non-numeric">{{ planos.valor }} </td>
+                  {{planos.aparelho.nome}}
+                </tr>             
+              </tbody>
+            </table>
+            
+
+
+
+            <!-- <div ng-repeat="listagem in main.listPlanos.planos">              
+              <ul ng-repeat="aparelho in listagem.aparelho">
+                <li>{{aparelho}} </li>                
+              </ul>
+             </div> -->
+   
+
+<form action="">
+
+
+</form>
+
+
+    
+          </div>
+        </div>
+      </main>
+    
+     
+    
+      <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__right-section">
+    
+        </div>
+      </footer>
+    
+    </div>
+    

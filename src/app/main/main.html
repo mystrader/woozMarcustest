@@ -1,0 +1,55 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+  <header class="mdl-layout__header">
+   <a href="ui-sref="/""> <img src="../assets/images/wooza.png"  alt="wooza"></a> 
+  </header>
+
+
+  <main class="mdl-layout__content">
+    <div class="page-content">
+
+      <h2>Inicial</h2> 
+      
+      <div class="mdl-grid">
+      
+
+        <div class="mdl-cell mdl-cell--4-col" ng-repeat="awesomeThing in main.githubContributes.plataformas">
+          <div class="acme-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">{{ awesomeThing.nome }} </h2>
+            </div>
+            <div class="mdl-card__media">
+              <img ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.nome }}">
+            </div>
+            <div class="mdl-card__supporting-text">
+              {{ awesomeThing.descricao }}
+              
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"  ui-sref="planos({id: awesomeThing.sku })">
+                escolher
+              </a>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+ 
+
+  <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__right-section">
+      <div class="mdl-logo">
+       <strong> Candidato</strong>: Marcus Cunha |
+       <strong>Site</strong>:
+        <a href="mystrader.com" target=""> mystrader.com</a> | 
+       <strong>Portfólio</strong>: <a href="https://www.behance.net/mystrader/resume" target="blank">https://www.behance.net/mystrader
+
+      </div>
+    </div>
+  </footer>
+
+</div>
