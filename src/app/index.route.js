@@ -19,7 +19,18 @@
         templateUrl: 'app/planos/planos.html',
         controller: 'PlanosController',
         controllerAs: 'main'
+      })
+      .state('formulario', {
+        url: '/plataforma/planos/formulario/:id',
+        templateUrl: 'app/planos/formulario.html',
+        controller: 'formController',
+        controllerAs: 'main'
       });
+
+
+
+
+      
 
     $urlRouterProvider.otherwise('/');
   }

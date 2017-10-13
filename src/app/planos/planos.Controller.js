@@ -21,17 +21,17 @@
        vm.listPlanos  = query;              
       });   
 
-console.log(_setList)
 
-      var _setList = function (data) {
-        vm.map = _.map(data.content, function (obj) {
-            return {
-               sku: obj.id,
-                numefranquiaro: obj.dsContrato,
+    // TODO: reconstruir objeto
+    //   var _setList = function (data) {
+    //     vm.map = _.map(data.content, function (obj) {
+    //         return {
+    //            sku: obj.id,
+    //             numefranquiaro: obj.dsContrato,
                 
-            }
-        });
-    };
+    //         }
+    //     });
+    // };
 
       
     }

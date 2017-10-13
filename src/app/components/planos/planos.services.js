@@ -10,7 +10,7 @@
 
      var  apiHost = "http://private-59658d-celulardireto2017.apiary-mock.com/planos/";
      
-     var urlApiPlanos = 'http://private-59658d-celulardireto2017.apiary-mock.com/planos/';
+   //  var urlApiPlanos = 'http://private-59658d-celulardireto2017.apiary-mock.com/planos/';
       // https://api.github.com/repos/Swiip/generator-gulp-angular
       
   
