@@ -6,14 +6,21 @@
 
  
     
-       <pre>
+       <!-- <pre>
         {{ main.listPlanos }}<!--//| json-->
-      </pre>
+      </pre-->
     
       <main class="mdl-layout__content">
         <div class="page-content">
       
-    <h1>Escolha seu Plano</h1>
+   <a class="mdl-button mdl-js-button mdl-button--primary" ui-sref="home">
+      <i class="material-icons">&#xE314;</i>  voltar
+    </a>
+    <h1>
+      <hr />
+      <span> Mais sobre o <strong> Plano do seu <span class="cor_texto_plano"> {{main.nome_plataforma}}</span></strong></span></h1>
+      <small>2/3</small> 
+    <hr>
             
           <div class="mdl-grid">
             
@@ -33,6 +40,23 @@
               </tbody>
             </table>
             
+
+</div>
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet">
+    
+
+    <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"  
+    ui-sref="formulario">
+    <!-- ({id: awesomeThing.sku }) -->
+        Contratar Plano <i class="material-icons">&#xE5CC;</i>
+      </a>
+  </div>
+
+  
+</div>
+
     
           </div>
         </div>
@@ -40,11 +64,17 @@
     
      
     
-      <footer class="mdl-mini-footer">
-        <div class="mdl-mini-footer__right-section">
-    
-        </div>
-      </footer>
+  <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__right-section">
+      <div class="mdl-logo">
+       <strong> Candidato</strong>: Marcus Cunha |
+       <strong>Site</strong>:
+        <a href="mystrader.com" target=""> mystrader.com</a> | 
+       <strong>Portfólio</strong>: <a href="https://www.behance.net/mystrader/resume" target="blank">https://www.behance.net/mystrader
+
+      </div>
+    </div>
+  </footer>
     
     </div>
     

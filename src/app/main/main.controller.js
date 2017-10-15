@@ -7,6 +7,10 @@
 
   /** @ngInject */
   function MainController(githubContributor) {
+  
+    //apagando o localStorage do id de plano da fase2
+    localStorage.clear();
+
     var vm = this; 
     vm.githubContributes = []; 
     activate();

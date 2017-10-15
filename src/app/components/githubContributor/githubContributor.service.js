@@ -16,9 +16,6 @@
       getContributors: getContributors
     };
 
-
-    
-
     return service;
 
     function getContributors() {

@@ -1,32 +1,89 @@
-<!-- TODO -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    
+      <header class="mdl-layout__header">
+       <a href="/"> <img src="../assets/images/wooza.png"  alt="wooza"></a> 
+      </header>
+    
+    
+      <main class="mdl-layout__content">
+        <div class="page-content">
+    
+               <a class="mdl-button mdl-js-button mdl-button--raised" ui-sref="home">
+                    <i class="material-icons">&#xE314;</i>   Voltar ao início
+                    </a><hr>
+                    
+                    <h1> Diga <strong> mais sobre você</strong></h1> <small>3/3</small> 
+                    <hr>
+                    
+          
+          <div class="mdl-grid">
+            
+    
+            <div class=" mdl-color--grey-100">
+                <main class="mdl-layout__content">
+                    <div class="mdl-card mdl-shadow--6dp">
+                        <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+                            <h2 class="mdl-card__title-text">Dados do Usuário</h2>
+                        </div>
+                      <div class="mdl-card__supporting-text">
+                            <form name="formUsuario" ng-submit="main.submitForm()" novalidate>
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <!-- nome -->
+                                            <input class="mdl-textfield__input" type="text" id="nome" ng-model="main.nome"/>
+                                            <label class="mdl-textfield__label" for="nome">Nome</label>
+                                        </div>
+                                        <!-- email -->
+                                        <div class="mdl-textfield mdl-js-textfield">
+                                            <input class="mdl-textfield__input" type="text" id="email" ng-model="main.email" />
+                                            <label class="mdl-textfield__label" for="email">e-mail</label>
+                                        </div>
+                                        <!-- nascimento -->
+                                        <div class="mdl-textfield mdl-js-textfield">
+                                                <input class="mdl-textfield__input" type="text" id="nascimento" ng-model="main.nascimento"  />
+                                                <label class="mdl-textfield__label" for="nascimento">nascimento</label>
+                                       </div>
+                                       <!-- CPF -->
+                                       <div class="mdl-textfield mdl-js-textfield">
+                                            <input class="mdl-textfield__input" type="text" id="cpf" ng-model="main.cpf" />
+                                            <label class="mdl-textfield__label" for="cpf">cpf</label>
+                                        </div>
+                                        <!-- telefone -->
+                                        <div class="mdl-textfield mdl-js-textfield">
+                                                <input class="mdl-textfield__input" type="text" id="telefone" ng-model="main.telefone" />
+                                                <label class="mdl-textfield__label" for="telefone">telefone</label>
+                                            </div>                                        
+                                            <div class="mdl-card__actions mdl-card--border">
+                                                    <button  type="submit"  class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Confirmar</button>
+                                                </div>
+                            </form>
+                        </div>
+                     
+                    </div>
+        
+        
+        
+                </div>
 
 
-<form action="" action="#" name="salvarTemplate">
+
     
+          </div>
+        </div>
+      </main>
     
+     
     
-       <label for=""> Nome
-            <input type="text" name="" id="" ng-model="form.nome">
-        </label>
+      <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__right-section">
+          <div class="mdl-logo">
+           <strong> Candidato</strong>: Marcus Cunha |
+           <strong>Site</strong>:
+            <a href="mystrader.com" target=""> mystrader.com</a> | 
+           <strong>Portfólio</strong>: <a href="https://www.behance.net/mystrader/resume" target="blank">https://www.behance.net/mystrader
     
-       <label> E-mail
-            <input type="email" name="" id=""  ng-model="form.email">
-        </label>
-        
-        <label>Nascimento
-            <input type="date" name="" id=""  ng-model="form.nascimento" >  
-        </label>
-        
-        <label>CPF
-            <input type="text" name="" id="" ng-model="form.cpf" >
-        </label>
-        
-        <label>Telefone
-            <input type="text" name="" id=""  ng-model="form.telefone" >
-        </label>
-        <input type="submit" ng-Click="send_form()" >
+          </div>
+        </div>
+      </footer>
     
-    </form>
-    
-    
+    </div>
     

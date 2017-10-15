@@ -22,16 +22,10 @@
       })
       .state('formulario', {
         url: '/plataforma/planos/formulario/:id',
-        templateUrl: 'app/planos/formulario.html',
+        templateUrl: 'app/formulario/formulario.html',
         controller: 'formController',
         controllerAs: 'main'
       });
-
-
-
-
-      
-
     $urlRouterProvider.otherwise('/');
   }
 
